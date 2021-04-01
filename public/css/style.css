@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,900i');
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  align-items: center;
+}
+
+/* ============================================== */
+/* separate the concerns of the heading selector  */
+/* by moving the text-transform property          */
+/* into its own class called ".heading-caps"      */
+/* then add ".heading-caps" to the second button, */
+/* ============================================== */
+
+.heading {
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 1.5rem;
+  background: #15DEA5;
+  color: #FFF;
+  font-size: 2rem;
+}
+
+.heading-caps {
+  text-transform: uppercase;
+}
+
+
+
