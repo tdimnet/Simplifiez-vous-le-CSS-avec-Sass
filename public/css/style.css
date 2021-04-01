@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,900i");
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+/* ¡¡¡Commencez à écrire ci-dessous Start writing your Sassy CSS below!!!  */
+.parent {
+  font-size: 1.5rem;
+  padding: 2rem;
+  background-color: #15DEA5;
+  color: #fff;
+  text-align: center;
+  border-radius: 2rem; }
+  .parent .child {
+    padding: 1rem;
+    background-color: #19647E;
+    margin-top: 1rem;
+    border-radius: 10rem; }
