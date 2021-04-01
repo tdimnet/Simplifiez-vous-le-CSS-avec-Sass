@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node_modules/.bin/node-sass --watch ./sass/main.scss:./public/css/style.css --style expanded --no-source-map"
+    "sass": "node_modules/.bin/node-sass --watch ./sass/main.scss ./public/css/style.css --style expanded --no-source-map"
   },
   "author": "",
   "license": "ISC",
