@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,900i");
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.poll {
+  width: 33%;
+  border: 1px solid #15DEA5;
+  padding: .5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .poll__pic {
+    width: 100%;
+    align-self: center; }
+  .poll__opt {
+    width: 40%;
+    cursor: pointer;
+    text-align: center;
+    background: #15DEA5;
+    padding: 1.5rem;
+    margin-top: .5rem;
+    color: #fff; }
+    .poll__opt--pink {
+      background: #EA526F; }
