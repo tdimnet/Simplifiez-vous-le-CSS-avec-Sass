@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,900i');
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+$color-primary: tomato;
+
+.form {
+  background: $color-primary;
+  width: 100%;
+  padding: 1rem 2rem;
+  &__heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: adjust-hue($color: $color-primary, $degrees: 180);
+  }
+}
