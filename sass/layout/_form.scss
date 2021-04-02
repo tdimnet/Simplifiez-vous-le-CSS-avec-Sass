@@ -1,0 +1,49 @@
+.form {
+    width: 100%;
+    padding-bottom: $grid-gutter;
+    &__heading {
+        width: 100%;
+        color: $colour-white;
+        @include heading-shadow;
+        background: $colour-primary;
+        line-height: 5rem;
+        padding: $grid-gutter;
+    }
+    &__field {
+        label {
+            color: $colour-accent;
+            display: block;
+            font-size: 2rem;
+            line-height: 2rem;
+            padding-top: $grid-gutter;
+        }
+        input {
+            width: 100%;
+            background: $colour-secondary;
+            @include border;
+            padding: $grid-gutter;
+            color: $colour-accent;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 2.75rem;
+          &:focus {
+            background: $colour-primary;
+            color: $colour-white;
+          }
+
+        }
+        textarea {
+            width: 100%;
+            color: $colour-primary;
+            background: $colour-secondary;
+            @include border;
+            outline: none;
+            padding: $grid-gutter;
+            margin-bottom: $grid-gutter;
+            &:active, &:focus {
+                color: $colour-accent;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,7 @@
+@mixin border($colour:$colour-primary) {
+    border: .1rem solid $colour;
+}
+
+@mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
+    text-shadow: $offset $offset $colour;
+}
