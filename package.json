@@ -1,0 +1,14 @@
+{
+  "name": "sass-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node_modules/.bin/node-sass --watch ./sass/main.scss ./public/css/style.css --style expanded --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
