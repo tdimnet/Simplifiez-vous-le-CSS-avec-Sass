@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,900i" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Portflio de Joe Blow | Contact</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__logo">
+            Joe Blow
+        </h1>
+        <nav class="nav">
+            <ul>
+                <li class="nav__link"> <a href="/">Mon travail</a> </li>
+                <li class="nav__link"> <a href="/about.html">À propos de moi</a></li>
+                <li class="nav__link nav__link--active">contact </li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main class="container">
+        <form class="form" action="">
+            <h1 class="form__heading">Contactez-moi</h1>
+            <div class="form__field">
+                <label for="contact-name">nom</label>
+                <input type="text" name="contact-name" id="contact-name" autocomplete="name">
+            </div>
+            <div class="form__field">
+                <label for="contact-email">email</label>
+                <input type="email" name="contact-email" id="contact-email" autocomplete="email">
+            </div>
+            <div class="form__field">
+                <label for="contact-message">message</label>
+                <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
+            </div>
+            <button class="btn btn--full-width">Valider</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
