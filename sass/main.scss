@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,900i');
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+$color-primary: #15DEA5;
+$color-secondary: #EA526F;
+$color-accent: #FFF;
+
+@mixin hover($color) {
+    @if (hue($color) < 180) {
+        $color: adjust-hue($color, 30);
+    } @else {
+        $color: adjust-hue($color, -60);
+    }
+    background: $color;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+  border-radius: 10rem;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: $color-accent;
+  background: $color-primary;
+  &:hover {
+      @include hover($color-primary);
+  }
+}
