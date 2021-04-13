@@ -27,6 +27,9 @@ html, body {
     height: 40vh;
     background: #15DEA5;
     padding: 1rem; }
+    @media (max-width: 599px) {
+      .article__image {
+        width: 100%; } }
   .article__summary {
     background: #EA526F;
     flex-grow: 2;
