@@ -23,6 +23,17 @@ $color-secondary: #EA526F;
 $color-tertiary: #19647E;
 $color-accent: #FFF;
 
+$breakpoints: (
+  mobile: 599px
+);
+
+@mixin mobile-only {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+
 
 .article {
   width: 75%;
@@ -31,20 +42,21 @@ $color-accent: #FFF;
   align-content: flex-start;
   background: $color-tertiary;
   color: $color-accent;
+  @include mobile-only;
+  
   &__image {
     width: 60%;
     height: 40vh;
     background: $color-primary;
     padding: 1rem;
 
-    @media (max-width: 599px) {
-      width: 100%;
-    }
+    @include mobile-only;
   }
   &__summary {
     background: $color-secondary;
     flex-grow: 2;
     padding: 1rem;
+    @include mobile-only;
   }
   &__body {
     width: 100%;
