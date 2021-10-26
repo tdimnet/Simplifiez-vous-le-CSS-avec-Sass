@@ -24,8 +24,7 @@ html, body {
   color: #FFF; }
   @media screen and (max-width: 599px) {
     .article {
-      width: 100%;
-      font-size: 1.5rem; } }
+      width: 100%; } }
   .article__image {
     width: 60%;
     height: 40vh;
@@ -33,15 +32,13 @@ html, body {
     padding: 1rem; }
     @media screen and (max-width: 599px) {
       .article__image {
-        width: 100%;
-        font-size: 1.5rem; } }
+        width: 100%; } }
   .article__summary {
     background: #EA526F;
     flex-grow: 2;
     padding: 1rem; }
     @media screen and (max-width: 599px) {
       .article__summary {
-        width: 100%;
         font-size: 1.5rem; } }
   .article__body {
     width: 100%;

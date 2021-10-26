@@ -29,8 +29,7 @@ $breakpoints: (
 
 @mixin mobile-only {
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-    width: 100%;
-    font-size: 1.5rem;
+    @content;
   }
 }
 
@@ -42,7 +41,9 @@ $breakpoints: (
   align-content: flex-start;
   background: $color-tertiary;
   color: $color-accent;
-  @include mobile-only;
+  @include mobile-only {
+    width: 100%;
+  }
   
   &__image {
     width: 60%;
@@ -50,13 +51,17 @@ $breakpoints: (
     background: $color-primary;
     padding: 1rem;
 
-    @include mobile-only;
+    @include mobile-only {
+      width: 100%;
+    }
   }
   &__summary {
     background: $color-secondary;
     flex-grow: 2;
     padding: 1rem;
-    @include mobile-only;
+    @include mobile-only {
+      font-size: 1.5rem;
+    }
   }
   &__body {
     width: 100%;
